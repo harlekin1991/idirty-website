@@ -1,0 +1,35 @@
+﻿<header>
+  <nav>
+    <ul>
+      <li routerLink="/artists" routerLinkActive="active">
+        <span>Artists</span>
+        <ul>
+          <li routerLink="/artists/liveacts" routerLinkActive="active">
+            <span>Liveacts</span>
+          </li>
+          <li routerLink="/artists/djs" routerLinkActive="active">
+            <span>Djs</span>
+          </li>
+        </ul>
+      </li>
+      <li routerLink="/calendar" routerLinkActive="active">
+        <span>Calendar</span>
+      </li>
+      <li routerLink="/releases" routerLinkActive="active">
+        <span>Releases</span>
+      </li>
+      <li routerLink="/login" routerLinkActive="active">
+        <span>Login</span>
+      </li>
+      <li routerLink="/gallery" routerLinkActive="active">
+        <span>Gallery</span>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+</footer>
+

@@ -1,0 +1,20 @@
+﻿<div class="page-content">
+  <nav class="sub-navigation">
+    <ul>
+      <li *ngFor="let p of panels" (click)="setPanel(p)">{{p.name}}</li>
+    </ul>
+  </nav>
+  <div *ngIf="panel.name == 'gallery'" class="panel">
+    <h1>Gallery  Panel</h1>
+  </div>
+  <div *ngIf="panel.name == 'artists'" class="panel">
+    <h1>Artists  Panel</h1>
+  </div>
+  <div *ngIf="panel.name == 'releases'" class="panel">
+    <h1>Releases  Panel</h1>
+  </div>
+  <div *ngIf="panel.name == 'calendar'" class="panel">
+    <h1>Calendar  Panel</h1>
+    <div id="calendar" class="fc-calendar-container"></div>
+    </div>
+  </div>
