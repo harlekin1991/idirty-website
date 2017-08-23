@@ -1,0 +1,35 @@
+﻿<div class="page-background">
+  <div class="idirty-animation ani-{{backgroundAnimationClass}}">
+    <div class="animation-content">
+    </div>
+  </div>
+  <div class="animation-text">
+    {{uDirtyString}}
+  </div>
+</div>
+<div class="page-content">
+  <ul class="artist-list" *ngIf="currentArtist == false">
+    <li *ngFor="let artist of djs" (click)="showArtist(artist)">
+      {{artist.name}}
+    </li>
+  </ul>
+  <div class="artist-info" *ngIf="currentArtist != false">
+    <button class="button-close" (click)="currentArtist= false">
+      X
+    </button>
+    <div class="artist-name" *ngIf="currentArtist.name">
+      {{currentArtist.name}}
+    </div>
+    <div class="artist-facebook" *ngIf="currentArtist.facebook">
+      <a href="{{currentArtist.facebook}}" target="_blank">Facebook Link</a>
+    </div>
+    <div class="artist-soundcloud" *ngIf="currentArtist.soundcloud">
+      <a href="{{currentArtist.soundcloud}}" target="_blank">Soundcloud Link</a>
+    </div>
+    <div class="artist-genre" *ngIf="currentArtist.genre">
+      {{currentArtist.genre}}
+    </div>
+    <div class="artist-description" *ngIf="currentArtist.description">
+      {{currentArtist.description}}
+    </div>
+  </div>

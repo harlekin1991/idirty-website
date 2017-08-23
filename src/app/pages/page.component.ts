@@ -10,6 +10,8 @@ export class PageComponent {
 
     backgroundAnimationClass = 'loaded';
 
+    currentArtist: any = false;
+
  
 
     startBackgroundAnimation() {
@@ -20,5 +22,9 @@ export class PageComponent {
             }, 2000);
         }, 500);
     };
+
+    showArtist(artist:any) {
+        this.currentArtist = artist;
+    }
 
 }

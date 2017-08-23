@@ -26,9 +26,9 @@
     left: 0;
   }
 
-
-
-
+.artist-info {
+background:#fff;
+}
 .animation-content {
   position: relative;
   width: 100%;
@@ -62,4 +62,22 @@
   top: 0;
   left: 0;
   z-index: 1;
+}
+.artist-list li{
+  font-size:20px;
+  font-weight:500;
+  padding:10px 20px;
+  text-shadow:0 0 2px rgb(3, 186, 13);
+  background: rgba(255,255,255,0.5);
+  margin-bottom: 5px;
+
+}
+.artist-info{
+  max-width:400px;
+  padding:20px;
+}
+.artist-name{
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:20px;
 }

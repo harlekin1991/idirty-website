@@ -21,12 +21,8 @@ const appRoutes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', redirectTo: '', pathMatch: 'full' },
     { path: 'gallery', component: GalleryComponent },
-    {
-        path: 'artists', component: ArtistsComponent, children: [
-            { path: '', redirectTo: 'liveacts', pathMatch: 'full' },
-            { path: 'liveacts', component: LiveactsComponent },
-            { path: 'djs', component: DjsComponent }]
-    },
+    { path: 'liveacts', component: LiveactsComponent },
+    { path: 'djs', component: DjsComponent },
     { path: 'calendar', component: CalendarComponent },
     { path: 'releases', component: ReleasesComponent },
     { path: 'shop', component: ShopComponent },
